@@ -1,0 +1,279 @@
+/* Selector etuiqueta html, class, id */
+/* propiedad: valor color:red */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital@1&display=swap');
+$bg: #f3f8fa;
+$white: #fff;
+$black: #282936;
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+    transition: $property $duration $ease;
+  }
+  
+*{
+    box-sizing: border-box;
+    &::before, &::after {
+      box-sizing: border-box;
+    }
+    margin: 0;
+    padding: 0;
+}
+body { 
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1
+{
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+
+a{
+    color:rgb(249, 249, 249);
+    text-decoration: none;
+    padding: 15px;
+}
+main
+{
+    background-color: gray;
+}
+footer  /*Pie de Pagina*/
+{
+    padding:3em;
+    background-color: #000000;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+}
+.redes /* Redes Sociales Logos */
+{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redes a /*Separacion de iconos*/
+{
+    padding:16px;
+}
+main
+{
+    grid-area: main;
+}
+.text{
+    grid-area: ad;
+}
+.link1
+{
+    grid-area: link1;
+}
+.img1
+{
+    grid-area: img1;
+}
+footer{
+    grid-area:footer;
+}
+
+.redes
+{
+    grid-area: redes;
+}
+footer
+{
+    grid-area: footer;
+}
+.servicios-img
+{
+    display: grid;
+    gap:15px;
+    justify-items: center;
+}
+.sobrenosotros
+{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "img1"
+    "ad"
+    "link1";
+}
+.img1
+{
+    height: 200px;
+    width: 200px;
+}
+@media (min-width: 500px)
+{
+    .sobrenosotros
+    {
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img1 link1"
+        "img1 link1";
+    }
+    .servicios-img
+    {
+grid-template-columns: 1fr 1fr;
+grid-template-areas: 
+"servicio1 servicio2"
+"servicio3 servicio4";
+    }
+    .img1
+    {
+        margin-top: -3em;
+        height: 210px;
+        width: 260px;
+    }
+.logo
+{
+    text-align: left;
+    margin-top: 10px;
+}
+.text
+{
+    font-size: small;
+}
+
+footer
+{
+    margin-top: 0;
+}
+.servicio1 ,.servicio2, .servicio3, .servicio4
+{
+    width: 200px;
+    height: 165px;
+}
+}
+
+@media (min-width: 728px)
+{
+    .sobrenosotros
+    {
+        margin-top: 20px;
+        margin-bottom: 0;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "img1 link1 link1"
+        "img1  link1 link1"
+    }
+.img1
+{
+    height: 350px;
+    width: 400px;
+    margin-top: -4em;
+}
+.text
+{
+    font-size: medium;
+}
+}
+@media (min-width: 728px)
+{
+
+.img1
+{
+    height: 500px;
+    width: 500px;
+    margin-top: -7em;
+}
+.link1
+{
+    font-size: large;
+}
+.servicio1, .servicio2, .servicio3, .servicio4 {
+    width: 450px;
+    height: 230px;
+}
+
+
+}
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 14rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $black;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $black;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+        background: $white;
+        transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: $white;
+    }
+  }
+}
