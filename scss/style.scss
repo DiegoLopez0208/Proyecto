@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital@1&display=swap');
 @import "index";
 @import "grid";
+@import "serviciosb";
 body { 
     text-align: center;
     font-family: 'Poppins',sans-serif;
@@ -10,6 +11,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+.carrusel
+{
+    margin: 10px;
+
 }
 h1
 {

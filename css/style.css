@@ -200,6 +200,37 @@ footer {
     margin-top: -4em;
   }
 }
+.sobren {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.derechos {
+  color: gray;
+}
+
+@media (min-width: 500px) {
+  .serviciosb, .boosting {
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    padding: 10px;
+  }
+  .serviciosb img, .boosting img {
+    margin-right: 30px;
+    width: auto;
+    height: 300px;
+  }
+  .serviciosb .parrafo, .boosting .parrafo {
+    font-size: 30px;
+    margin-top: 130px;
+  }
+}
 body {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -207,6 +238,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.carrusel {
+  margin: 10px;
 }
 
 h1 {
