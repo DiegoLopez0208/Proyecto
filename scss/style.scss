@@ -1,12 +1,14 @@
 /* Selector etuiqueta html, class, id */
 /* propiedad: valor color:red */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import "index";
 @import "grid";
 @import "serviciosb";
+@import "contactos";
+@import "logo";
 body { 
     text-align: center;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     display: flex;
     flex-direction: column;
@@ -41,16 +43,20 @@ footer  /*Pie de Pagina*/
     margin-bottom: 0;
     margin-top: 1.5em;
 }
-.redes /* Redes Sociales Logos */
-{
 
+.pf
+{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    text-align: right;
+    vertical-align: middle;
+    span 
+    {
+        color:black;
+    }
 }
-.redes a /*Separacion de iconos*/
+
+.img1
 {
-    padding:16px;
+    border-radius: 27%;
+    box-shadow: 4px 3px 3px rgb(11 10 10 / 29%);
 }
-
-

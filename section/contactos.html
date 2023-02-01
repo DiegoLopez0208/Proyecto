@@ -22,7 +22,7 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="historia.html">Historia</a>
+                        <a class="nav-link active" aria-current="page" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
@@ -46,31 +46,31 @@
         <section class="container mt-5 mb-5  p-3 --bs-dark-text bg-light border --bs-dark-border-subtle rounded-2">
           <form action="https://formsubmit.co/c15a513f311492fe73aa4aa69de4174d" class="row g-3 p-3 needs-validation" method="POST" novalidate>
             <div class="col-6 position-relative ">
-              <label for="nombreInput" class="form-label" >Nombre *</label>
+              <label for="nombreInput" class="form-label" >Nombre <span class="asterisk">*</span></label>
               <input type="nombre" class="form-control" id="nombreInput"  placeholder="Escribe tu nombre" name="Nombre" required  >
               <div class="invalid-tooltip"> Es necesario poner el nombre.</div>
             </div>
             <div class="col-6 position-relative">
-              <label for="apellidoInput" class="form-label" >Apellido *</label>
+              <label for="apellidoInput" class="form-label" >Apellido <span class="asterisk">*</span></label>
               <input type="apellido" class="form-control" id="apellidoInput" placeholder="Escribe tu Apellido" name="Apellido" required >
               <div class="invalid-tooltip"> Es necesario poner el apellido.</div> 
             </div>
             <div class="col-12 position-relative">
-              <label for="emailInput" class="form-label" >Email *</label>
+              <label for="emailInput" class="form-label" >Email <span class="asterisk">*</span></label>
               <input type="email" class="form-control" id="emailInput" placeholder="Email"  name="Email" required> 
             </div>
             <div class="col-6 position-relative">
-              <label for="disponibilidadInput" class="form-label" >Disponibilidad Horaria *</label>
+              <label for="disponibilidadInput" class="form-label" >Disponibilidad Horaria <span class="asterisk">*</span></label>
               <input type="disponibilidad" class="form-control" id="disponibilidadInput" placeholder="Ej: (10 a 18hrs)" name="Disponibilidad" required> 
               <div class="invalid-tooltip"> Es necesario poner su disponibilidad horaria.</div>
             </div>
             <div class="col-6 position-relative">
-              <label for="redesInput" class="form-label" >Redes Sociales * </label>
+              <label for="redesInput" class="form-label" >Redes Sociales <span class="asterisk">*</span> </label>
               <input type="redes" class="form-control" id="redesdInput" placeholder="Twitter/Instagram/Facebook" name="Redes sociales" required> 
               <div class="invalid-tooltip"> Es necesario poner sus redes sociales.</div>
             </div>
             <div class="col-6 position-relative">
-              <label for="direccion1Input" class="form-label" >Direccion 1 *</label>
+              <label for="direccion1Input" class="form-label" >Direccion 1 <span class="asterisk">*</span></label>
               <input type="direccion1" class="form-control" id="direccion1Input" placeholder="Direccion 1"  name="Direccion 1" required> 
               <div class="invalid-tooltip"> Es necesario poner su direccion.</div>
             </div>
@@ -79,12 +79,12 @@
               <input type="direccion2" class="form-control" id="direccion2Input" placeholder="Direccion 2" name="Direccion 2"> 
             </div>
             <div class="col-5 position-relative">
-              <label for="ciudadInput" class="form-label" >Ciudad *</label>
+              <label for="ciudadInput" class="form-label" >Ciudad <span class="asterisk">*</span></label>
               <input type="ciudad" class="form-control" id="ciudadInput" placeholder="Ciudad"  name="Ciudad" required> 
               <div class="invalid-tooltip"> Es necesario poner su ciudad.</div>
             </div>
             <div class="col-3 position-relative">
-              <label for="codigopostalInput" class="form-label">Codigo Postal *</label>
+              <label for="codigopostalInput" class="form-label">Codigo Postal <span class="asterisk">*</span></label>
               <input type="codigopostal" class="form-control" id="codigopostalInput" placeholder="Ej:1432" name="Codigo Postal" required>
               <div class="invalid-tooltip"> Es necesario poner poner su codigo postal.</div>
             </div>
@@ -105,13 +105,13 @@
               </div>
             </div>
             <div class="col-12 position-relative">
-              <label for="trabajarInput" class="form-label" >¿Por que quieres unirte a KindredSmurfs? *</label>
+              <label for="trabajarInput" class="form-label" >¿Por que quieres unirte a KindredSmurfs? <span class="asterisk">*</span></label>
               <textarea class="form-control" id="trabajarInput" name="Trabajo" rows="3" required>
               </textarea> 
               <div class="invalid-tooltip"> Es necesario poner llenar el area.</div>
             </div>
             <div class="col-12 position-relative">
-              <label for="contratoInput" class="form-label" >¿Por que deberíamos de contratarte? *</label>
+              <label for="contratoInput" class="form-label" >¿Por que deberíamos de contratarte? <span class="asterisk">*</span></label>
               <textarea class="form-control" id="contratoInput" name="Contrato" rows="3" required></textarea> 
               <div class="invalid-tooltip"> Es necesario poner llenar el area.</div>
             </div>
@@ -131,6 +131,12 @@
             <input type="hidden" name="_next" value="http://localhost:8080/section/gracias.html"> <!-- Modificar el host-->
           </form>
         </section>
+      </section>
+      <section class="pf">
+        <a href="preguntasfrecuentes.html">
+          <img src="../img/help.svg"  alt="ayuda"/><span>¿Tienes alguna duda?</span>
+        </a>
+      </section>
         <footer>
             <!--Pie de pagina-->
             <!--Direccion-->
@@ -146,7 +152,7 @@
                     <img src="../img/icons8-twitter.svg" alt="Twitter Icono pajaro volando" width="32" height= "32"> 
                     </a>
                 <p> <!--Twitter-->
-                    <a href="https://www.instagram.com/by_cheat_/"target=”_blank” >
+                    <a href="https://www.instagram.com/kindredsmurfs/ "target=”_blank” >
                     <img src="../img/icons8-instagram.svg" alt="Icono Instagram Camara Cuadrada" width="32" height= "32"> 
                     </a>
             </div>
