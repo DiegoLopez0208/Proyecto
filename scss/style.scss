@@ -6,6 +6,8 @@
 @import "serviciosb";
 @import "contactos";
 @import "logo";
+@import "preg";
+@import "card";
 body { 
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -16,7 +18,9 @@ body {
 }
 .carrusel
 {
+    display: flex;
     margin: 10px;
+    text-align: center;
 
 }
 h1

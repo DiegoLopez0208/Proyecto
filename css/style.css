@@ -2,6 +2,7 @@
 /* propiedad: valor color:red */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -92,7 +93,6 @@ button:hover .button-text {
 
 .redes {
   padding: 40px;
-  min-width: 500px;
   display: flex;
   justify-content: center;
 }
@@ -326,82 +326,59 @@ p {
 }
 .loading-text span:nth-child(1) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
-          animation: blur-text 1.5s 0s infinite linear alternate;
+  animation: blur-text 1.5s 0s infinite linear alternate;
 }
 .loading-text span:nth-child(2) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
-          animation: blur-text 1.5s 0.2s infinite linear alternate;
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
 }
 .loading-text span:nth-child(3) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
-          animation: blur-text 1.5s 0.4s infinite linear alternate;
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
 }
 .loading-text span:nth-child(4) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
-          animation: blur-text 1.5s 0.6s infinite linear alternate;
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
 }
 .loading-text span:nth-child(5) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
-          animation: blur-text 1.5s 0.8s infinite linear alternate;
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
 }
 .loading-text span:nth-child(6) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
-          animation: blur-text 1.5s 1s infinite linear alternate;
+  animation: blur-text 1.5s 1s infinite linear alternate;
 }
 .loading-text span:nth-child(7) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
-          animation: blur-text 1.5s 1.2s infinite linear alternate;
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
 }
 .loading-text span:nth-child(8) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 1.4s infinite linear alternate;
-          animation: blur-text 1.5s 1.4s infinite linear alternate;
+  animation: blur-text 1.5s 1.4s infinite linear alternate;
 }
 .loading-text span:nth-child(9) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 1.6s infinite linear alternate;
-          animation: blur-text 1.5s 1.6s infinite linear alternate;
+  animation: blur-text 1.5s 1.6s infinite linear alternate;
 }
 .loading-text span:nth-child(10) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 1.8s infinite linear alternate;
-          animation: blur-text 1.5s 1.8s infinite linear alternate;
+  animation: blur-text 1.5s 1.8s infinite linear alternate;
 }
 .loading-text span:nth-child(11) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 2s infinite linear alternate;
-          animation: blur-text 1.5s 2s infinite linear alternate;
+  animation: blur-text 1.5s 2s infinite linear alternate;
 }
 .loading-text span:nth-child(12) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 2.2s infinite linear alternate;
-          animation: blur-text 1.5s 2.2s infinite linear alternate;
+  animation: blur-text 1.5s 2.2s infinite linear alternate;
 }
 .loading-text span:nth-child(13) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 2.4s infinite linear alternate;
-          animation: blur-text 1.5s 2.4s infinite linear alternate;
+  animation: blur-text 1.5s 2.4s infinite linear alternate;
 }
 .loading-text span:nth-child(14) {
   filter: blur(0px);
-  -webkit-animation: blur-text 1.5s 2.6s infinite linear alternate;
-          animation: blur-text 1.5s 2.6s infinite linear alternate;
-}
-
-@-webkit-keyframes blur-text {
-  0% {
-    filter: blur(0px);
-  }
-  100% {
-    filter: blur(4px);
-  }
+  animation: blur-text 1.5s 2.6s infinite linear alternate;
 }
 
 @keyframes blur-text {
@@ -412,6 +389,98 @@ p {
     filter: blur(4px);
   }
 }
+.preg {
+  font-family: "Roboto", sans-serif;
+}
+.preg h2 {
+  font-weight: bolder;
+  color: black;
+}
+
+.tarjetas .eloboost {
+  max-width: 1800px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+.tarjetas .cuentas {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+.tarjetas .coachingotros {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+.tarjetas .title-cards {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #7a7a7a;
+}
+.tarjetas .card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+.tarjetas .card img {
+  width: 100%;
+  height: 250px;
+}
+.tarjetas .card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.tarjetas .card .contenido-card {
+  padding: 15px;
+  text-align: center;
+}
+.tarjetas .card .contenido-card h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+.tarjetas .card .contenido-card p {
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.tarjetas .card .contenido-card a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+.tarjetas .card .contenido-card a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .tarjetas .container-card {
+    flex-wrap: wrap;
+  }
+  .tarjetas .card {
+    margin: 15px;
+  }
+}
+
 body {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -422,7 +491,9 @@ body {
 }
 
 .carrusel {
+  display: flex;
   margin: 10px;
+  text-align: center;
 }
 
 h1 {

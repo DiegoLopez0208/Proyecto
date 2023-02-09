@@ -42,8 +42,8 @@
     <main>
         <section>
             <h1><strong>Formulario</strong></h1>
-        </section>
-        <section class="container mt-5 mb-5  p-3 --bs-dark-text bg-light border --bs-dark-border-subtle rounded-2">
+        </section> 
+        <section class="container mt-5 mb-5  p-3 --bs-dark-text bg-light border --bs-dark-border-subtle rounded-2"> <!-- Formulario -->
           <form action="https://formsubmit.co/c15a513f311492fe73aa4aa69de4174d" class="row g-3 p-3 needs-validation" method="POST" novalidate>
             <div class="col-6 position-relative ">
               <label for="nombreInput" class="form-label" >Nombre <span class="asterisk">*</span></label>
@@ -57,7 +57,8 @@
             </div>
             <div class="col-12 position-relative">
               <label for="emailInput" class="form-label" >Email <span class="asterisk">*</span></label>
-              <input type="email" class="form-control" id="emailInput" placeholder="Email"  name="Email" required> 
+              <input type="email" class="form-control" id="emailInput" placeholder="Email"  name="Email" required>
+              <div class="invalid-tooltip"> Es necesario poner su mail.</div>  
             </div>
             <div class="col-6 position-relative">
               <label for="disponibilidadInput" class="form-label" >Disponibilidad Horaria <span class="asterisk">*</span></label>
@@ -106,14 +107,13 @@
             </div>
             <div class="col-12 position-relative">
               <label for="trabajarInput" class="form-label" >¿Por que quieres unirte a KindredSmurfs? <span class="asterisk">*</span></label>
-              <textarea class="form-control" id="trabajarInput" name="Trabajo" rows="3" required>
-              </textarea> 
-              <div class="invalid-tooltip"> Es necesario poner llenar el area.</div>
+              <textarea class="form-control" id="trabajarInput" name="Trabajo" rows="3" required></textarea> 
+              <div class="invalid-tooltip"> Es necesario  rellenar este area.</div>
             </div>
             <div class="col-12 position-relative">
               <label for="contratoInput" class="form-label" >¿Por que deberíamos de contratarte? <span class="asterisk">*</span></label>
               <textarea class="form-control" id="contratoInput" name="Contrato" rows="3" required></textarea> 
-              <div class="invalid-tooltip"> Es necesario poner llenar el area.</div>
+              <div class="invalid-tooltip"> Es necesario rellenar este area.</div>
             </div>
             <div class="col-12 position-relative">
               <div class="form-check"></div>
@@ -133,7 +133,7 @@
         </section>
       </section>
       <section class="pf">
-        <a href="preguntasfrecuentes.html">
+        <a href="preguntasfrecuentes.html"> <!-- Boton ir PreguntasFrecuentes-->
           <img src="../img/help.svg"  alt="ayuda"/><span>¿Tienes alguna duda?</span>
         </a>
       </section>
@@ -163,7 +163,7 @@
                 
             </div>
         </footer> 
-        </main>
+        </main> <!-- Scripts-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script>(() => {
           'use strict'
